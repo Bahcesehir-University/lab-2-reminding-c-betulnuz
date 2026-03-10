@@ -42,83 +42,43 @@ int findMaximum(vector<int> numbers)
     // Return the largest number in the vector
     int maxValue = numbers[0];
     for (int i = 1; i< numbers.size() ; i++ ){
-
         if(numbers[i] > maxValue){
-
             maxValue = numbers[i];
-
         }
-
     }
-
     return maxValue;
-
 }
- 
- 
 /*
-
 ---------------------------------------
-
 PART 4 — Strings
-
 ---------------------------------------
-
 */
- 
 string reverseString(string text)
-
 {
-
     // TODO
-
     // Return the reversed version of the string
-
     string reversed = "";
-
     for ( int i= text.length() - 1; i>=0 ;i--){
-
         reversed += text[i];
-
     }
-
     return reversed;
-
 }
- 
- 
 /*
-
 ---------------------------------------
-
 PART 5 — Simple Class
-
 ---------------------------------------
-
 */
- 
 class Student
-
 {
-
 private:
-
     string name;
-
     int grade;
- 
 public:
- 
     // TODO
-
     // Create a constructor that receives
-
     // name and grade
-
 Student(string n, int g){
-
     name = n ;
-
     grade= g;
 
 }
@@ -126,61 +86,36 @@ Student(string n, int g){
     // TODO
 
     // Create a function printInfo()
-
     // that prints:
-
     // Name: <name>
-
     // Grade: <grade>
-
    void  printInfo(){
-
         cout << "Name:" << name << endl;
-
         cout << "Grade:" << grade << endl;
-
     }
- 
 };
- 
- 
 /*
-
 ---------------------------------------
-
 MAIN FUNCTION
-
 ---------------------------------------
-
 */
- 
 int main()
-
 {
-
     cout << "C++ Review Lab\n";
- 
     /*
-
     PART 1 TEST
-
     */
- 
     cout << "Sum of 4 + 5 = "
 << addNumbers(4,5)
 << endl;
- 
     /*
-
     PART 2 TEST
-
     */
  
     cout << "Sum up to 10 = "
 << sumUpToN(10)
 << endl;
- 
- 
+
     /*
 
     PART 3 TEST
@@ -220,3 +155,4 @@ int main()
 
 }
  
+
